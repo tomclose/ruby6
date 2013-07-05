@@ -47,8 +47,7 @@ describe 'authors' do
     it 'works' do
         assert_equal ["Harold Abelson", "Gerald Jay Sussman",
             "Brian W. Kernighan", "Dennis M. Ritchie",
-            "Donald Knuth", "Richard Stallman",
-            "Donald Knuth"].sort, authors(library).sort
+            "Donald Knuth", "Richard Stallman"].sort, authors(library).sort
     end
 end
 
