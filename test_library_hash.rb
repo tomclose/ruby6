@@ -29,6 +29,8 @@ end
 
 describe 'has_author?' do
     it "works" do
+        puts library.inspect
+        puts has_author?(library, "Donald Knuth").inspect
         assert has_author?(library, "Donald Knuth")
         assert !has_author?(library, "Donald Duck")
     end
@@ -54,8 +56,8 @@ end
 
 describe 'add_book' do
     it 'works' do
-        library = []
-        add_book(library, {:title => "Book", :author => "Bob"})
-        assert_equal library [{:title => "Book", :author => "Bob"}], library
+        library2 = []
+        add_book(library2, {:title => "Book", :author => "Bob"})
+        assert_equal library2 [{:title => "Book", :author => "Bob"}], library2
     end
 end

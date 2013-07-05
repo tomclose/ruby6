@@ -19,6 +19,8 @@ def has_title?(library, title)
 
 end
 
+# Return an array of all the titles of books in
+# the library
 def titles(library)
 end
 
@@ -29,6 +31,8 @@ def has_author?(library, author)
     library.map{|b| b[:authors].split("; ")}.flatten.include?(author)
 end
 
+# Returns a list of all the authors in the library
+# (with no repeated values)
 def authors(library)
 end
 
