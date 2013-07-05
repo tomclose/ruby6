@@ -50,7 +50,7 @@ describe 'Library' do
 
 
     it 'add_book' do
-        library2 = Library.new({})
+        library2 = Library.new([])
         library2.add_book("Book", "Bob")
         assert_equal ["Book"], library2.titles
     end
