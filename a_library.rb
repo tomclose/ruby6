@@ -37,7 +37,7 @@ class ALibrary
     books << {:title => title, :authors => authors}
   end
 
-  def authors_with_books
+  def authors_with_titles
     author_books = Hash.new { [] }
     @books.each do |book|
       book[:authors].split("; ").each do |a|

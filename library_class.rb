@@ -7,7 +7,8 @@ class Library
         @books = books
     end
 
-    def has_book?
+    def has_title?(title)
+        @books.map {|b| b[:title]}.include?(title)
     end
 
     def has_author?
@@ -17,13 +18,13 @@ class Library
     end
 
     # Extension -----------
-    def books
+    def titles
     end
 
     def authors
     end
 
-    def authors_with_books
+    def authors_with_titles
     end
 end
 
