@@ -19,7 +19,7 @@ def has_title?(library, title)
 
 end
 
-def title(library)
+def titles(library)
 end
 
 # Returns true if the library contains a book
@@ -30,7 +30,7 @@ def has_author?(library, author)
 end
 
 def authors(library)
-
+end
 
 # Adds a book to the library.
 #    
