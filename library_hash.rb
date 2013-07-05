@@ -6,16 +6,20 @@ library = [
     { :title => "The Art of Computer Programming", 
       :authors => "Donald Knuth"},
     { :title => "Free Software, Free Society",
-      :authors => "Richard Stallman"}
+      :authors => "Richard Stallman"},
+    { :title => "TeX: The Program",
+        :authors => "Donald Knuth"}
 ]
-
 
 
 # Returns true if the library contains a book
 # with the given title, false otherwise
 #
-def has_book?(library, title)
+def has_title?(library, title)
 
+end
+
+def title(library)
 end
 
 # Returns true if the library contains a book
@@ -24,6 +28,9 @@ end
 def has_author?(library, author)
     library.map{|b| b[:authors].split("; ")}.flatten.include?(author)
 end
+
+def authors(library)
+
 
 # Adds a book to the library.
 #    

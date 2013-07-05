@@ -32,7 +32,9 @@ books = [
     { :title => "The Art of Computer Programming", 
       :authors => "Donald Knuth"},
     { :title => "Free Software, Free Society",
-      :authors => "Richard Stallman"}
+      :authors => "Richard Stallman"},
+    { :title => "TeX: The Program",
+      :authors => "Donald Knuth"}
     ]
 
 library = Library.new(books)
